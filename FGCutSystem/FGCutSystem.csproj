@@ -152,11 +152,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809160030549_UserTable.cs" />
-    <Compile Include="Migrations\201809160030549_UserTable.Designer.cs">
-      <DependentUpon>201809160030549_UserTable.cs</DependentUpon>
+    <Compile Include="Migrations\201809171707272_UserTable.cs" />
+    <Compile Include="Migrations\201809171707272_UserTable.Designer.cs">
+      <DependentUpon>201809171707272_UserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809171710555_UserTableCorrectDate.cs" />
+    <Compile Include="Migrations\201809171710555_UserTableCorrectDate.Designer.cs">
+      <DependentUpon>201809171710555_UserTableCorrectDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809171733273_UserTableAddUsersActionCol.cs" />
+    <Compile Include="Migrations\201809171733273_UserTableAddUsersActionCol.Designer.cs">
+      <DependentUpon>201809171733273_UserTableAddUsersActionCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809171828082_ModulesTable.cs" />
+    <Compile Include="Migrations\201809171828082_ModulesTable.Designer.cs">
+      <DependentUpon>201809171828082_ModulesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809171858383_ModulesRemoveIndexActive.cs" />
+    <Compile Include="Migrations\201809171858383_ModulesRemoveIndexActive.Designer.cs">
+      <DependentUpon>201809171858383_ModulesRemoveIndexActive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809171915202_ProfilesTable.cs" />
+    <Compile Include="Migrations\201809171915202_ProfilesTable.Designer.cs">
+      <DependentUpon>201809171915202_ProfilesTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Profile.cs" />
+    <Compile Include="Models\SystemModule.cs" />
     <Compile Include="Models\FGCutSystemContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2561,11 +2583,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809160030549_UserTable.resx">
-      <DependentUpon>201809160030549_UserTable.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
@@ -2616,6 +2633,26 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809171707272_UserTable.resx">
+      <DependentUpon>201809171707272_UserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809171710555_UserTableCorrectDate.resx">
+      <DependentUpon>201809171710555_UserTableCorrectDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809171733273_UserTableAddUsersActionCol.resx">
+      <DependentUpon>201809171733273_UserTableAddUsersActionCol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809171828082_ModulesTable.resx">
+      <DependentUpon>201809171828082_ModulesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809171858383_ModulesRemoveIndexActive.resx">
+      <DependentUpon>201809171858383_ModulesRemoveIndexActive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809171915202_ProfilesTable.resx">
+      <DependentUpon>201809171915202_ProfilesTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

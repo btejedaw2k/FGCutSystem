@@ -11,7 +11,7 @@ namespace FGCutSystem.Migrations
                 "dbo.Users",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.Int(nullable: false),
                         Nombre = c.String(nullable: false, maxLength: 30, storeType: "nvarchar"),
                         Apellido = c.String(nullable: false, maxLength: 30, storeType: "nvarchar"),
                         UserId = c.String(nullable: false, maxLength: 15, storeType: "nvarchar"),

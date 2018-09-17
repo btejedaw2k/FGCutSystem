@@ -7,13 +7,13 @@ namespace FGCutSystem.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class UserTable : IMigrationMetadata
+    public sealed partial class ModulesRemoveIndexActive : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UserTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ModulesRemoveIndexActive));
         
         string IMigrationMetadata.Id
         {
-            get { return "201809160030549_UserTable"; }
+            get { return "201809171858383_ModulesRemoveIndexActive"; }
         }
         
         string IMigrationMetadata.Source
